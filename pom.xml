@@ -28,8 +28,13 @@
             <version>1.11-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160810</version>
+        </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -45,7 +50,7 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include></include>
+                                    <include>org.json:*</include>
                                 </includes>
                             </artifactSet>
                         </configuration>
